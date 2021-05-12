@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+:root {
+  --text-color: rgb(167, 163, 163);
+  --font-family: "Noto Sans JP", sans-serif;
+  --hover: rgb(255, 253, 253);
+  --background: rgb(59, 59, 59);
+  --speed: 500ms;
+}
+
+.nav_bar {
+  background: var(--background);
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 900;
+    &:hover {
+      color: var(--hover);
+    }
+  }
+
+  .nav_links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    .a {
+      list-style: none;
+      text-decoration: none;
+      color: var(--text-color);
+      font-family: var(--font-family);
+      font-weight: 600;
+      &:hover {
+        color: var(--hover);
+      }
+    }
+  }
+  //   TOGGLE
+  .burger {
+    li {
+      list-style: none;
+      background-color: rgb(212, 209, 209);
+      padding: 2px 12px;
+      margin: 5px 0px;
+    }
+    &:hover li {
+      background-color: var(--hover);
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 14vh;
+  right: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--background);
+  overflow: hidden;
+  transition: all var(--speed);
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    a {
+      text-decoration: none;
+      padding: 1rem 3rem;
+      color: var(--text-color);
+    }
+  }
+  .menu-primary-enter {
+    position: absolute;
+    transform: translateX(-110%);
+  }
+
+  .menu-primary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+
+  .menu-primary-exit {
+    position: absolute;
+  }
+
+  .menu-primary-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+
+    /* color: transparent; */
+  }
+
+  .menu-secondary-enter {
+    transform: translateX(110%);
+  }
+
+  .menu-secondary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+
+  .menu-secondary-exit {
+  }
+
+  .menu-secondary-exit-active {
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+  }
+}

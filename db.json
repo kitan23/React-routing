@@ -1,0 +1,50 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "HTML is easy",
+      "date": "2019-05-30T17:30:31.098Z",
+      "important": false
+    },
+    {
+      "content": "React is not that easy",
+      "date": "2021-04-13T08:38:28.142Z",
+      "important": true,
+      "id": 2
+    },
+    {
+      "content": "making new note",
+      "date": "2021-04-13T08:38:36.483Z",
+      "important": true,
+      "id": 3
+    },
+    {
+      "content": "GET and Post are fundamentals ",
+      "date": "2021-04-13T08:38:44.525Z",
+      "important": false,
+      "id": 4
+    }
+  ],
+  "persons":[
+    { 
+      "name": "Arto Hellas", 
+      "number": "040-123456",
+      "id": 1
+    },
+    { 
+      "name": "Ada Lovelace", 
+      "number": "39-44-5323523",
+      "id": 2
+    },
+    { 
+      "name": "Dan Abramov", 
+      "number": "12-43-234345",
+      "id": 3
+    },
+    { 
+      "name": "Mary Poppendieck", 
+      "number": "39-23-6423122",
+      "id": 4
+    }
+  ]
+}
